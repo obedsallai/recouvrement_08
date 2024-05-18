@@ -7,7 +7,7 @@ export default function Liste(){
     return <div>
             <div className="flex justify-between">
                 <nav className='flex justify-left'>
-                    <Image src={'/img/logo fh gestion 1.jpg'} width={152} height={58}></Image>
+                    <Image src={'/img/logo fh gestion 1.jpg'} width={152} height={58} alt="logo"></Image>
                     <div className="flex justify-between">
                         <Link href={"/donnee"} className="p-4 rounded-lg bg-slate-50 text-blue-800">Données</Link>
                         <Link href={"/automatisation"} className="p-4 rounded-lg ">Automatisations</Link>
@@ -24,7 +24,7 @@ export default function Liste(){
                         <p style={{marginLeft:'-15px'}} className= " mt-4 bg-red-500 border-2 border-solid border-black w-1/12 h-6 text-sm  rounded-lg text-white text-center">2</p>
                         
                         
-                            <Image className="justify-right ml-10" src={'/img/Ellipse 1.png'} width={50} height={20}></Image>
+                            <Image className="justify-right ml-10" src={'/img/Ellipse 1.png'} width={50} height={20} alt="profile"></Image>
                         </div>
                 </div>
         
