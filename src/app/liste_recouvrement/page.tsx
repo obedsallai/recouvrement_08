@@ -4,8 +4,8 @@ import Table from "@/components/table"
 export default function Liste(){
     return <div>
             <div className="flex justify-between">
-                <nav className='flex justify-left'>
-                    <Image src={'/img/logo fh gestion 1.jpg'} width={152} height={58} alt="logo"></Image>
+                <nav className="flex justify-left">
+                    <Image src={"/img/logo fh gestion 1.jpg"} width={152} height={58} alt="logo"></Image>
                     <div className="flex justify-between">
                         <Link href={"/donnee"} className="p-4 rounded-lg bg-slate-50 text-blue-800">Données</Link>
                         <Link href={"/automatisation"} className="p-4 rounded-lg ">Automatisations</Link>
@@ -19,15 +19,14 @@ export default function Liste(){
                         <svg className="mt-5 justify-left w-2/12 mt-4 ml-5 w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
                         <path strokeLinecap="round" strokeLinejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0M3.124 7.5A8.969 8.969 0 0 1 5.292 3m13.416 0a8.969 8.969 0 0 1 2.168 4.5" />
                         </svg>
-                        <p style={{marginLeft:'-15px'}} className= " mt-4 bg-red-500 border-2 border-solid border-black w-1/12 h-6 text-sm  rounded-lg text-white text-center">2</p>
+                        <p style={{marginLeft:"-15px"}} className= " mt-4 bg-red-500 border-2 border-solid border-black w-1/12 h-6 text-sm  rounded-lg text-white text-center">2</p>
                         
                         
-                            <Image className="justify-right ml-10" src={'/img/Ellipse 1.png'} width={50} height={20} alt="profile"></Image>
+                            <Image className="justify-right ml-10" src={"/img/Ellipse 1.png"} width={50} height={20} alt="profile"></Image>
                         </div>
                 </div>
         
             </div>
-            {/* La premiere ligne de la page est constituée d'une nav et d'une div. */}
             <div className="bg-slate-50">
                 <div className="flex justify-between mt-5 bg-slate-50">
                     <p className="text-xl font-bold ml-5">Impayés</p>                    
@@ -50,7 +49,7 @@ export default function Liste(){
                     </div>
                     
                 </div>
-                <p className="mt-4 justify-left ml-5 bg-slate-50">Un aperçu de tous vos recouvrements d'impayés</p>
+                <p className="mt-4 justify-left ml-5 bg-slate-50">Un aperçu de tous vos recouvrements impayés</p>
                 
             </div>
             <div className="p-4 bg-slate-50">
