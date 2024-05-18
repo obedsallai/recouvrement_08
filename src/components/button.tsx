@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const Button=({label, classname, Type})=>{
     return(
         <button className={classname} type={Type}>
