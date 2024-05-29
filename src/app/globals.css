@@ -2,32 +2,474 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.gratest_div{
+    padding-left: 60px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.div_recouvrement{
+    width: 287px;
+    height: 64px;
+    gap: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
+.form{
+    width: 50%;
+    height:100% ;
+    padding: 18px,32px,18px,32px;
+}
+
+.couple_div_line{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 83px;
+    gap: 23px;
+    margin-top: 20px;
+}
+
+.div_names{
+    font-size: 18px;
+    color: #121212;
+    font-weight: 500px;
+    line-height: 27px;
+}
+/* Ce style est pour les champs d'entrés uniquement*/
+.my_input{
+    width: 100%;
+    height: 50px;
+    border-radius: 6px;
+    border: solid 2px #12121208;
+    padding: 12px;
+}
+
+.one_div{
+    width: 48%;
+}
+
+.facture{
+    width: 100%;
+    height: 120px;
+    gap: 6px;
+}
+
+.div_buttons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 239px;
+    height: 44px;
+}
+.save_button{
+    width: 126px;
+    height: 44px;
+    border-radius: 6px;
+    border: solid 1px;
+    padding: 10px,20px,10px,20px;
+    gap: 30px;
+    color:white;
+    background-color: #007FC8 ;
+    
+}
+.cancel_button{
+    width: 101px;
+    height: 44px;
+    border-radius: 6px;
+    border: solid 1px;
+    padding: 10px,20px,10px,20px;
+    gap: 30px;
+    color: #007FC8;
+    background-color: white ;
+}
+.dashed_frame{
+    width: 100%;
+    height: 87px;
+    border-radius: 4px;
+    border: solid  1px blue;
+    border-style: dashed;
+    padding:18px,12px,18px,12px;
+    gap:6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#007FC80A;
+    
+}
+
+.debiteur{
+    width: 287px;
+    height: 24px;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    font-style: #636774;
+}
+
+
+
+/* La suite du style correspond à la page de la liste des recouvrements*/
+
+
+.flex_div{
+    display: flex;
+    justify-content: space-between;
+}
+.nav_link_style{
+    padding: 1rem;
+    border-radius: 6px;
+    background-color:#007FC81F;
+    margin-top: 1rem;
+}
+.nav_div{
+    width: 101px;
+    height: 40px;
+    border-radius: 6px;
+    padding: 8px, 16px, 8px, 16px;
+    gap: 10px;
+}
+.nav_hole_div{
+    width: 376px;
+    height: 40px;
+    gap: 36px;
+    margin-top: 20px;
+}
+
+
+
+
+.div_right{
+    align-items: self-end;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 80%;
+    gap: 64px;
+    margin-right: 55px;
+    
+}
+
+.nombre_2{
+    width: 13px;
+    height: 13px;
+    margin-top: -4.75px;
+    margin-left: -14px;
+    padding-left: 4px;
+    font-size: 9px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+.image_div_style{
+    
+    margin-right: 4rem;
+}
+
+.div_impayes{
+    width: Hug (1,512px)px;
+    height: Hug (70px)px;
+    gap: 24px;
+    opacity: 0px;
+
+}
+.div_impayes_impayes{
+    width: Hug (360px)px;
+    height: Hug (70px)px;
+    gap: 4px;
+    opacity: 0px;
+
+}
+.div_nav_bar{
+    width: 100%;
+    height: Hug (90px)px;
+    /* gap: 44px; */
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.div_img_nav{
+    width: Hug (592px)px;
+    height: Hug (58px)px;
+    gap: 64px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar{
+    width: Hug (376px)px;
+    height: Hug (40px)px;
+    gap: 36px;
+    opacity: 0px;
+
+}
+.div_non_payes{
+    width: 90%;
+    height: Hug (70px)px;
+    gap: 24px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.petit_div_impayes{
+    width: Hug (360px)px;
+    height: Hug (70px)px;
+    gap: 4px;
+    opacity: 0px;
+
+}
+.impayes{
+    width: 112px;
+    height: 42px;
+    gap: 0px;
+    opacity: 0px;
+    
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: left;
+    font-style: #121212;
+    
+}
+.impayes_p{
+    width: 360px;
+    height: 24px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    font-style: #636774;
+
+}
+.div_tableau{
+    width:100%;
+    height: 822px;
+    top: 129px;
+    left: 43px;
+    gap: 24px;
+    opacity: 0px;
+
+}
+
+.table_th{
+    width:100%;
+    height: 72px;
+    padding: 24px 0px 0px 0px;
+    gap: 10px;
+    border-radius: 8px 8px 0px 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: #FBFCFC;
+}
+
+.table_row_white{
+    width: Fill (1,512px)px;
+    height: Hug (82px)px;
+    padding: 20px 24px 20px 24px;
+    gap: 10px;
+    border: 0px 1px 1px 1px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border-width: 0px, 1px, 1px, 1px;
+    border-style: solid;
+    border-color: #6367741F;
+}
+.row_color{
+    background: #FBFCFC;
+}
+.my_tr{
+    height: 82px;
+    padding: 20px 24px 20px 24px;
+    gap: 10px;
+    border: 0px 1px 1px 1px;
+    opacity: 0px;
+    border-width: 0px, 1px, 1px, 1px;
+    border-style: solid;
+    border-color: rgba(99, 103, 116, 0.12);
+
+
+}
+
+.p_nom_style{
+    width: 133px;
+    height: 19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.36px;
+    
+}
+.montant{
+    width: 66px;
+    height: 19px;
+    top: 11.5px;
+    left: 855px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+}
+.inovapulse{
+    width: Hug (85px)px;
+    height: Hug (25px)px;
+    top: 8.5px;
+    left: 1079px;
+    padding: 4px 8px 4px 8px;
+    gap: 10px;
+    border-radius: 4px 0px 0px 0px;
+    border: 0.4px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    text-align: left;
+    font-style: #636774;
+
+}
+.div_flex{
+    display:flex;
+    justify-content: space-between;
+}
+.style_facture{
+    width: 88px;
+    height: 19px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 19.36px;
+    text-align: left;
+    font-style: #636774;
+
+}
+.voir_facture{
+    width: 95px;
+    height: 21px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+    font-style: #121212;
+}
+.en_attente{
+    width: 69px;
+    height: 17px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    text-align: left;
+    font-style: #FC7900;
+}
+
+.envoye{
+    width: 49px;
+    height: 17px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    /* text-align: left; */
+    font-style: #31AA27;
+}
+
+.ent_facture{
+    width: 59px;
+    height: 24px;
+    top: 24px;
+    margin: left 40px;
+    font-family:Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    font-style: #121212;
+    /* margin-left: 200px; */
+
+}
+.ent_societe{
+    width: 58px;
+height: 24px;
+top: 24px;
+left: 270px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+font-style: #121212;
+}
+.ent_debiteur{
+    width: 140px;
+height: 24px;
+top: 24px;
+left: 510px;
+gap: 0px;
+opacity: 0px;
+font-family: Inter;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+font-style: #121212;
+
+}
+.ent_montant{
+    width: 65px;
+    height: 24px;
+    top: 24px;
+    left: 879px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    font-style: #121212;
+
+}
+
+.ent_email{
+    width: 41px;
+    height: 24px;
+    top: 24px;
+    left: 1103px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    font-style: #121212;
+}
+.bg_tableau{
+    background: linear-gradient(to bottom, #f4f5f5 0.04%, rgba(0, 56, 89, 0.52) 99.99%),
+linear-gradient(180deg, rgba(252, 247, 247, 0.94) 0.01%, #FFFFFF 84.27%);
+
+}
+
