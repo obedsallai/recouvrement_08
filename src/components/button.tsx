@@ -1,17 +1,18 @@
-import React from 'react';
+import React from "react";
 
-interface ButtonProps {
+interface IconButtonProps {
     label: string;
     classname: string;
-    Type: 'button' | 'submit' | 'reset';
+    children: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, classname, Type }) => {
+const IconButton: React.FC<IconButtonProps> = ({ label, classname, children }) => {
     return (
-        <button className={classname} type={Type}>
+        <button className={classname}>
+            {children}
             {label}
         </button>
     );
 };
 
-export default Button;
+export default IconButton;
