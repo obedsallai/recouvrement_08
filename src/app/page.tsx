@@ -1,21 +1,13 @@
 /*eslint-disable*/
 "use client"
-<<<<<<< HEAD
-import './globals.css'
-=======
->>>>>>> 1d4ae3b6663ec2e2f165b9f2628e4124d9ba76e8
 import Button from "@/components/button"
 import Link from "next/link"
 import { useState } from "react"
 
 
 export default function Formulaire(){
-<<<<<<< HEAD
-  
-=======
   const rounded='rounded-lg p-4'
   const mytext = 'text-lg '
->>>>>>> 1d4ae3b6663ec2e2f165b9f2628e4124d9ba76e8
   const [formData, setFormData]=useState({
     numero:'',
     societe:'',
@@ -117,18 +109,6 @@ export default function Formulaire(){
             
 
             <div>
-<<<<<<< HEAD
-              <div className=''>
-                <div className='pt-1'>
-                  <label className="div_names" htmlFor="facture">Ajouter la Facture</label>
-                  <div className="dashed_frame">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
-                    </svg>
-                    <p className="div_names">Glisser et Déposer un fichier ou <Link className="text-blue-600" href={'/'}>Téléverser</Link></p>  
-                  </div>
-
-=======
               <div className='p-5 mr-4 ml-4 w-9/12'>
                 <label className={mytext} htmlFor="facture">Ajouter la Facture</label>
                 <div className="w-full rounded-lg flex h-20 items-center flex-col  bg-gray-200 border-2 border-blue-700 border-dashed">
@@ -137,7 +117,6 @@ export default function Formulaire(){
                   </svg>
                   <p className="">Glisser et Déposer un fichier ou <Link className="text-blue-600" href={'/'}>Téléverser</Link></p>
                   
->>>>>>> 1d4ae3b6663ec2e2f165b9f2628e4124d9ba76e8
                 </div>
               </div>             
             </div>     
