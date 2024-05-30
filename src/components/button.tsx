@@ -1,9 +1,17 @@
-/*eslint-disable*/
-const Button=({label, classname, Type})=>{
-    return(
+import React from 'react';
+
+interface ButtonProps {
+    label: string;
+    classname: string;
+    Type: 'button' | 'submit' | 'reset';
+}
+
+const Button: React.FC<ButtonProps> = ({ label, classname, Type }) => {
+    return (
         <button className={classname} type={Type}>
-            {label}        
+            {label}
         </button>
-    )
+    );
 };
+
 export default Button;
