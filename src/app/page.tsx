@@ -108,22 +108,20 @@ export default function Formulaire(){
 
             
 
-            <div>
-              <div className='p-5 mr-4 ml-4 w-9/12'>
+            <div className="w-full">
                 <label className={mytext} htmlFor="facture">Ajouter la Facture</label>
-                <div className="w-full rounded-lg flex h-20 items-center flex-col  bg-gray-200 border-2 border-blue-700 border-dashed">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+                <div className="w-full rounded-lg flex h-25 items-center flex-col  bg-gray-200 border-2 border-blue-700 border-dashed p-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-10">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M12 9.75v6.75m0 0-3-3m3 3 3-3m-8.25 6a4.5 4.5 0 0 1-1.41-8.775 5.25 5.25 0 0 1 10.233-2.33 3 3 0 0 1 3.758 3.848A3.752 3.752 0 0 1 18 19.5H6.75Z" />
                   </svg>
                   <p className="">Glisser et Déposer un fichier ou <Link className="text-blue-600" href={'/'}>Téléverser</Link></p>
                   
-                </div>
-              </div>             
+                </div>            
             </div>     
 
             <div className='div_buttons'>
-              <Button  label="Enregistrer" classname="save_button"Type={"submit"}></Button>
-              <Button label="Annuler" classname="cancel_button" Type={"reset"}></Button> 
+              <Button  classname="save_button" type={"submit"}><p>Enregistrer</p> </Button>
+              <Button classname="cancel_button" type={"reset"}><p>Annuler</p></Button> 
             </div>
             
           </form>
